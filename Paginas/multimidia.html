@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../Arquivos/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="../Arquivos/media.css"/>
+    <script type="text/javascript" src="../Arquivos/script.js"></script>
+    <title>Google Glass</title>
+</head>
+<body>
+
+    <div id="interface">
+
+        <header id="cabecalho">
+
+            <hgroup>
+                <h1> Google Glass </h1>
+                <h2> A revolução do Google está chegando </h2>
+                <!-- <img src="Imagens/glass-logo-peq.jpg" alt=""> -->
+            </hgroup>
+
+            <img 
+                id="icone" 
+                src="../Imagens/multimidiab.png"
+                alt="google glass"
+            />
+
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li 
+                        onmouseover="mudaFoto('homeb')"
+                        onmouseout="mudaFoto('multimidiab')">
+                        <a href="../Arquivos/index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li 
+                        onmouseover="mudaFoto('especificacoesb')"
+                        onmouseout="mudaFoto('multimidiab')">
+                        <a href="especificacoes.html">
+                            Especificações
+                        </a>
+                    </li>
+                    <li
+                        onmouseover="mudaFoto('fotosb')"
+                        onmouseout="mudaFoto('multimidiab')">
+                        <a href="fotos.html">
+                            Fotos
+                        </a>
+                    </li>
+                    <li 
+                        onmouseover="mudaFoto('multimidiab')"
+                        onmouseout="mudaFoto('multimidiab')">
+                        <a href="multimidia.html">
+                            Multimídia
+                        </a>
+                    </li>
+                    <li 
+                        onmouseover="mudaFoto('contatob')"
+                        onmouseout="mudaFoto('multimidiab')">
+                        <a href="faleconosco.html">
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+        
+        <article id="noticia-principal">
+                
+            <header id="cabecalho-artigo">
+                <hgroup>
+                    <h3>Glass > Multimídia</h3>
+                    <h1>Sons e Vídeos</h1>
+                    <h2>por Fabio Medeiros</h2>
+                    <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+                </hgroup>
+            </header>
+        
+        </article>
+
+            <div id="tv-radio">
+                <audio id="musica" controls="controls">
+                    <source src="../Audios/2009-lovers-carvings-bibio.mp3" type="audio/mpeg"/>
+                </audio>
+                <video id="video" controls="controls" poster="../Imagens/video-mini03.jpg">
+                    <source src="../Videos/getting-started.mp4" type="video/mp4"/>
+                </video>
+            </div>
+
+        <footer id="rodape">
+
+            <p> &copy; 2021 - by Fabio Medeiros </p>
+
+            <p>
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>  
+                |
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                |
+                <a href="../Paginas/lampada.html">Lâmpada</a>
+            </p>
+
+        </footer>
+
+    </div>
+
+</body>
+</html>

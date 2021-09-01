@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../Arquivos/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="../Arquivos/forms.css"/>
+    <script type="text/javascript" src="../Arquivos/script.js"></script>
+    <title>Google Glass</title>
+</head>
+<body>
+
+    <div id="interface">
+
+        <header id="cabecalho">
+
+            <hgroup>
+                <h1> Google Glass </h1>
+                <h2> A revolução do Google está chegando </h2>
+                <!-- <img src="Imagens/glass-logo-peq.jpg" alt=""> -->
+            </hgroup>
+
+            <img 
+                id="icone" 
+                src="../Imagens/contatob.png"
+                alt="google glass"
+            />
+
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li 
+                        onmouseover="mudaFoto('homeb')"
+                        onmouseout="mudaFoto('contatob')">
+                        <a href="../Arquivos/index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li 
+                        onmouseover="mudaFoto('especificacoesb')"
+                        onmouseout="mudaFoto('contatob')">
+                        <a href="especificacoes.html">
+                            Especificações
+                        </a>
+                    </li>
+                    <li
+                        onmouseover="mudaFoto('fotosb')"
+                        onmouseout="mudaFoto('contatob')">
+                        <a href="fotos.html">
+                            Fotos
+                        </a>
+                    </li>
+                    <li 
+                        onmouseover="mudaFoto('multimidiab')"
+                        onmouseout="mudaFoto('contatob')">
+                        <a href="multimidia.html">
+                            Multimídia
+                        </a>
+                    </li>
+                    <li 
+                        onmouseover="mudaFoto('contatob')"
+                        onmouseout="mudaFoto('contatob')">
+                        <a href="faleconosco.html">
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+        
+        <article id="noticia-principal">
+                
+            <header id="cabecalho-artigo">
+                <hgroup>
+                    <h3>Fale Conosco > Contato</h3>
+                    <h1>Formulário de Contato</h1>
+                    <h2>por Fabio Medeiros</h2>
+                    <h3 class="direita">Atualizado em 23/Abril/2013</h3>
+                </hgroup>
+            </header>
+        
+        </article>
+
+        <form id="fcontato" method="POST" action="mailto:fabioeomedeiros@gmail.com" oninput="calc_total()">
+
+            <fieldset id="usuario"> 
+                <legend>Identificação do Usuário</legend>
+                <p>
+                    <label for="cnome">Nome:</label>
+                    <input
+                        id="cnome"
+                        name="tnome"
+                        type="text"
+                        size="20"
+                        maxlength="50"
+                        placeholder="Nome completo"
+                    >
+                </p>
+                <p>
+                    <label for="csenha">Senha:</label>
+                    <input 
+                        id="csenha"
+                        name="tsenha" 
+                        type="password"
+                        size="16"
+                        maxlength="16" 
+                        placeholder="Senha"
+                    >
+                </p>
+                <p>
+                    <label for="cemail">e-mail:</label>
+                    <input 
+                        id="cemail"
+                        name="temail"
+                        type="email"
+                        size="20"
+                        maxlength="40" 
+                        placeholder="e-mail"
+                    >
+                </p>
+                <fieldset>
+                    <legend id="sexo">Sexo:</legend> 
+                    <input id="cmasc" name="tsexo" type="radio" checked>
+                    <label for="cmasc">Masculino</label> 
+                    <br>
+                    <input id="cfem" name="tsexo" type="radio">
+                    <label for="cfem">Feminino</label>
+                </fieldset>
+                <p>
+                    <label for="">Data de Nascimento:</label>
+                    <input 
+                        id="cnasc"
+                        name="tnasc"
+                        type="date"
+                    >                        
+                </p>
+            </fieldset>
+
+            <fieldset id="endereco">
+                <legend>Endereço do Usuário</legend>
+                <p>
+                    <label for="crua">Logradouro:</label>
+                    <input 
+                        id="crua" 
+                        name="trua" 
+                        type="text"
+                        size="20"
+                        maxlength="80"
+                        placeholder="Rua, Avenia, Travessa ..."
+                    >
+                </p>
+                <p>
+                    <label for="cnum">Número:</label>
+                    <input 
+                        id="cnum" 
+                        name="tnum" 
+                        type="number"
+                        min="0"
+                        max="9999"
+                        placeholder="número"
+                    >
+                </p>
+                <p>
+                    <label for="cestado">Estado:</label>
+                    <select id="cestado" name="testado"> 
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE" selected>Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                        <option value="EX">Estrangeiro</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="ccidade">Cidade:</label>
+                    <input 
+                        id="ccidade" 
+                        name="tcidade" 
+                        type="text"
+                        list="cidades"
+                        placeholder="Cidade"
+                        size="20"
+                        maxlength="60"
+                    >
+                </p>
+                <datalist id="cidades">
+                    <option value="Rio de Janeiro"></option>
+                    <option value="Niterói"></option>
+                    <option value="Belford Roxo"></option>
+                </datalist>
+            </fieldset>
+           
+            <fieldset id="mensagem"> 
+                <legend>Mensagem do Usuário</legend>
+                    <p>
+                        <label for="curg">Grau de Urgência:</label>
+                        Mín
+                        <input
+                            id="curg"
+                            name="turg" 
+                            type="range"
+                            min="0"
+                            max="10"
+                            step="1"
+                        >
+                        Máx
+                    </p>    
+                    <p>
+                        <label for="cmes">Mensagem:</label>
+                        <textarea
+                            id="cmes"
+                            name="tmes" 
+                            cols="40"
+                            rows="7"
+                            placeholder="Deixe aqui sua mensagem"
+                        >
+                        </textarea>
+                    </p>
+                    
+            </fieldset>
+
+            <fieldset id="pedido">
+                <legend>Quero um Google Glass</legend>
+                <p>
+                    <input id="cped"
+                        name="tped" 
+                        type="checkbox"
+                    >
+                    <label for="cped">Gostaria de adquirir um Google Glass?</label>
+                </p>
+                <p>
+                    <label for="ccor">Cor:</label>
+                    <input id="ccor"
+                        name="tcor" 
+                        type="color"
+                        value=""
+                    >
+                </p>
+                <p>
+                    <label for="cqtd">Quantidade:</label>
+                    <input id="cqtd"
+                        name="tqtd" 
+                        type="number"
+                        min="0"
+                        max="5"
+                    >
+                </p>
+                <p>
+                    <label for="ctot">Preço Total: R$</label>
+                    <input id="ctot"
+                        name="ttot" 
+                        type="text"
+                        placeholder="Total a Pagar"
+                        readonly
+                    >
+                </p>
+            </fieldset>
+
+            <!-- <input type="submit" value="Enviar"> -->
+            <input id="cenviar" name="tenviar" type="image" src="../Imagens/botao-enviar.png">
+
+        </form>
+
+        <footer id="rodape">
+
+            <p>Copyright &copy; 2021 - by Fabio Medeiros</p>
+
+            <p>
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>  
+                |
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                |
+                <a href="Paginas/lampada.html">Lâmpada</a>
+            </p>
+
+        </footer>
+
+    </div>
+
+</body>
+</html>
